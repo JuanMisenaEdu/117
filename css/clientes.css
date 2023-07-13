@@ -1,0 +1,181 @@
+.title-center{
+    margin-right: 15em;
+}
+
+.ul-list-inventory{
+    height: 72vh;
+}
+
+.info-inventory{
+    width: 100%;
+    
+}
+
+.title-info-inventory{
+    text-align: center;
+    padding: 1rem;  
+}
+
+.table-list-product{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.title-table-inventory{
+    background-color: rgb(201, 199, 199);
+    text-align: center;
+}
+
+.head-table-inventory{
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.body-table-inventory{
+    padding: 0.3rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(73, 50, 175);
+}
+
+.input-busqueda {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.busqueda-cliente {
+    width: 23%;
+    border: none;
+    background-color: rgb(243, 237, 230);
+    border-radius: 10px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.div-img-busqueda {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.img-busqueda {
+    width: 20px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.noClientes {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #19ab47;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.campos-input {
+    display: inline-block;
+    width: 50rem;   
+    margin-bottom: 10px;
+}
+
+.caja-texto {
+    border: none;
+    background-color: rgb(243, 237, 230);
+    border-radius: 10px;
+    padding: 0.3rem 3rem;
+}
+
+/* Estilos para la pantalla de creacion de clientes estilo modal*/
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.titulo-crear-cliente {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para el botón */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-formulario-cliente {
+    text-align: center;
+}
+
+/* Estilo para el botón cerrar */
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lbl-cliente {
+    margin-left: 4rem;
+    width: 35%;
+}
+
+.input-create-cliente {
+    width: 40%;
+    border: none;
+    background-color: rgb(243, 237, 230);
+    border-radius: 10px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    display: block;
+}
+
+.registro-formulario {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 0.8rem;
+}
+
+.registro-formulario label {
+    margin-right: 10px;
+}

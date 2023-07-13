@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lila: #b58fc0;
+    --Oscuro: #212121;
+    --Primario: #FFC107;
+    --Secundario: #0097A7;
+    --Gris: #757575;
+    --GrisClaro: #DFE9F3;
+    --fuente_principal:5.8rem;
+    
+    
+}
+html{
+    font-size: 25.5%;/*Reiniciamos toda la pagina a un tamaño estandar*/
+    box-sizing: border-box;/*Recalcula el ancho de una caja para que el width sea la estrictamente
+    la suma de border + padding + ancho o altura que sea necesario para que se cumpla*/
+
+}
+
+
+
+body{
+    font-size: 3rem;
+    font-family: 'krub', sans-serif;/*añadimos la fuente de google fonts para que se aplique
+    a toda la pagina html*/
+    
+    /*DEGRADADO DE ABAJO HACIA ARRIBA*/
+}
+
+@media ( min-width:480px ) {
+    body{
+        /*Llegado a los 480 px de tamaño de la pagina, esta se pone de color azul*/
+        font-size: 5rem;
+    }
+}
+@media ( min-width:768px ) {
+    body{
+        background-color:white;
+        
+    }
+}
+/* header */
+.tituloo{
+    font-size: var(--fuente_principal);
+    color: var(--Oscuro);
+    font-family: 'Allan', cursive;
+    
+}
+.hero{
+  background-color: var(--lila);
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 95px 2%;
+    justify-content: space-between;
+}
+.logo_header{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    margin-top: 5px;
+    
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 100px;
+
+   
+}
+nav ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.logo_header img{
+    width: 160px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    
+}
+nav .centrar P{
+    margin-left: 70px;
+    font-family: 'Bacasime Antique', serif;
+    font-size: 50px;
+    margin-bottom: 5px;
+
+}
+input{
+    padding: 3px;
+    
+    padding-right: 30px;
+    border-radius: 5px;
+    border: none 1rex solid;
+    background-color: var(--lila);
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+}
+.buscar{
+    
+    margin-right: 250px;
+
+}
+.carrito{
+    margin-bottom: 120px;
+    position: relative;
+}
+.navegacion{
+    width: 300px;
+}
+.fa-shopping-cart{
+    width: 40px;
+
+    
+}
+.fa-shopping-cart:hover{
+    cursor: pointer;
+    
+}
+.close{
+    width: 25px;
+    height: 25px;
+}
+.close:hover{
+    cursor: pointer;
+
+}
+#contador-prodcutos{
+    font-size: 12px;
+}
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+}
+.container-card-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+.hidden-card{
+    display: none;
+}
+.card-product{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.20);
+}
+.info-card-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+    
+    
+}
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+.cart-total{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+}
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+/* main */
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.lista_item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.lista_item--click{
+    cursor: pointer;
+}
+.lista_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+.flecha .list_flecha{
+    transform: rotate(90deg);
+}
+.list_flecha{
+    margin-right: auto;
+    transition: transform .3s;
+}
+.nav_link{
+    color: #303440;
+    display: block;
+    padding: 10px 0px;
+    margin-right: 60px;
+    text-decoration: none;
+    
+}
+.nav_link--inside:hover{
+    background: white
+}
+.list_show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+.nav_link--inside{
+    border-radius: 6px;
+    border-left: 20px;
+    text-align: left;
+}
+/* footer */
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: var(--lila);
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.box_footer .logo_footer img{
+    width: 160px;
+    display: flex;
+}
+.box_footer .termino{
+    max-width: 350px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box_footer h2{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.box_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.copyright{
+    max-width: 1250px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.copyright p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+.Exhibicion{
+    display: flex;
+}
+.grid{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.img-exhibicion{
+    background-color: rgb(207, 163, 216);
+    width: 180px;
+    height: 170px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.img-exhibicion img{
+    background-color: var(--lila);
+    width: 165px;
+    height: 130px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.img-exhibicion a{
+    font-family: 'Allan', cursive;
+
+}
+.boton-exhibixion{
+    padding: 5px;
+}
+.boton-exhibixion{
+    text-decoration: none;
+    color: var(--Oscuro);
+}
+.boton-exhibixion:hover{
+    color: var(--Oscuro);
+}
+.seleccionado {
+    color: #303440;
+    display: block;
+    padding: 10px 0px;
+    margin-right: 60px;
+    
+}

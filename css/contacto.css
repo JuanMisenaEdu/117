@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lila: #b58fc0;
+    --Oscuro: #212121;
+    --Primario: #FFC107;
+    --Secundario: #0097A7;
+    --Gris: #757575;
+    --GrisClaro: #DFE9F3;
+    --fuente_principal:5.8rem;
+    
+    
+}
+html{
+    font-size: 25.5%;/*Reiniciamos toda la pagina a un tamaño estandar*/
+    box-sizing: border-box;/*Recalcula el ancho de una caja para que el width sea la estrictamente
+    la suma de border + padding + ancho o altura que sea necesario para que se cumpla*/
+
+}
+
+
+
+body{
+    font-size: 3rem;
+    font-family: 'krub', sans-serif;/*añadimos la fuente de google fonts para que se aplique
+    a toda la pagina html*/
+    
+    /*DEGRADADO DE ABAJO HACIA ARRIBA*/
+}
+
+@media ( min-width:480px ) {
+    body{
+        /*Llegado a los 480 px de tamaño de la pagina, esta se pone de color azul*/
+        font-size: 5rem;
+    }
+}
+@media ( min-width:768px ) {
+    body{
+        background-color:white;
+        
+    }
+}
+.tituloo{
+    font-size: var(--fuente_principal);
+    color: var(--Oscuro);
+    font-family: 'Allan', cursive;
+    
+}
+.hero{
+  background-color: var(--lila);
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 95px 2%;
+    margin-bottom: 100px;
+    
+    
+    
+}
+.logo_header{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-top: 5px;
+    
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 100px;
+
+   
+}
+nav ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.logo_header img{
+    width: 160px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    
+}
+nav .centrar p{
+    margin-left: 180px;
+    font-family: 'Bacasime Antique', serif;
+    font-size: 50px;
+    margin-bottom: 5px;
+    
+
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: var(--lila);
+    margin-top: 40px;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.box_footer .logo_footer img{
+    width: 160px;
+    display: flex;
+}
+.box_footer .termino{
+    max-width: 350px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box_footer h2{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.box_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.copyright{
+    max-width: 1250px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.copyright p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+.contacto-container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+}
+form{
+    padding: 50px;
+    background: linear-gradient(
+        50deg,
+        rgb(180, 124, 184)0%,
+        rgb(172, 99, 185)50%,
+        rgb(204, 98, 181)100%
+    );
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+.form-contet{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+input, textarea{
+    padding: 10px 10px;
+    background-color:#dab7e4;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    color: #212121;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgb(66, 65, 65);
+    font-size: 16px;
+}
+.textarea {
+    margin-bottom: 40px;
+}
+.btn{
+    padding: 10px 15px;
+    width: 180px;
+    align-self: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.success {
+    position: absolute;
+    top: 50px;
+    color: rgb(2, 227, 211, 1);
+    font-size: 18px;
+}
+.error{
+    position: absolute;
+    margin-bottom: 50px;
+    coloR: #e02D00;
+    font-size: 18px;
+}
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    form{
+        width: 100%;
+    }
+    .form-group{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:  20px;
+        margin-bottom: 20px;
+    }
+    .textarea{
+        margin-bottom: 30px;
+    }
+}

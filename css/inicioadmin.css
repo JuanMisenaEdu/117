@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.dash-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    background-color: #b8a2be;
+}
+  
+.logo-dash-admin {
+    width: 5rem;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-left: 2rem;
+}
+  
+.list-menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-menu-dash {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.img-menu-dash {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.img-menu-dash-users {
+    height: 3rem;
+    width: 3rem;
+}
+
+span {
+    margin-left: 2rem;
+}
+
+.descrip-menu {
+  padding: 1.2rem 5rem;
+  background-color: #ebebeb;
+}
+
+.descrip-menu p {
+  margin: 0;
+}
+
+.img-moduls {
+    height: 3rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-moduls {
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.text-moduls {
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.contenedor-moduls {
+    text-align: center;
+    flex: 1 1 20rem;
+    margin: 2rem 2rem 0 2rem ;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+.contenedor-moduls:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px #000;
+    transition: all 0.2s ease;
+}

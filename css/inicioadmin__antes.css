@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lila: #b58fc0;
+    --Oscuro: #212121;
+    --Primario: #FFC107;
+    --Secundario: #0097A7;
+    --Gris: #757575;
+    --GrisClaro: #DFE9F3;
+    --fuente_principal:5.8rem;
+    
+    
+}
+html{
+    font-size: 25.5%;/*Reiniciamos toda la pagina a un tamaño estandar*/
+    box-sizing: border-box;/*Recalcula el ancho de una caja para que el width sea la estrictamente
+    la suma de border + padding + ancho o altura que sea necesario para que se cumpla*/
+}
+
+body{
+    font-size: 3rem;
+    font-family: Trebuchet MS, sans-serif;/*añadimos la fuente de google fonts para que se aplique
+    a toda la pagina html*/
+    
+    /*DEGRADADO DE ABAJO HACIA ARRIBA*/
+}
+
+@media ( min-width:480px ) {
+    body{
+        /*Llegado a los 480 px de tamaño de la pagina, esta se pone de color azul*/
+        font-size: 5rem;
+    }
+}
+@media ( min-width:768px ) {
+    body{
+        background-color:white;
+        
+    }
+}
+/* header */
+.hero{
+  background-color: #888484;
+  height: 100px;
+}
+
+/* main */
+.navegacion{
+    width: 20%;
+    float: left;
+}
+
+.list{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #5dc1fc;
+    
+}
+.lista_item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.lista_item--click{
+    cursor: pointer;
+}
+.lista_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+.flecha .list_flecha{
+    transform: rotate(90deg);
+}
+.list_flecha{
+    margin-right: auto;
+    transition: transform .3s;
+}
+.nav_link{
+    color: #303440;
+    display: block;
+    padding: 10px 0px;
+    margin-right: 60px;
+    text-decoration: none;
+    
+    
+}
+.nav_link--inside:hover{
+    background: white
+}
+.list_show{
+    width: 80%;
+    margin-left: auto;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+.nav_link--inside{
+    border-radius: 6px;
+    border-left: 20px;
+    text-align: left;
+}
+.icon-user{
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.icon-user img{
+ width: 80px;
+}
+
+.text-title {
+    text-align: center;
+}
+
+.registro-productos {
+    width: 65%;
+    float: left;
+}
+
+label {
+    display: inline-block;
+    width: 60rem;
+    padding: 3rem;
+}
+  
+.campos-input {
+    display: inline-block;
+    width: 100rem;
+    margin-bottom: 10px;
+}
+
+.caja-texto {
+    border: none;
+    background-color: rgb(243, 237, 230);
+    border-radius: 10px;
+    padding: 0.3rem 3rem;
+}
+
+.seccion-boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    background-color: #19ab47;
+    border: none;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.3rem;
+}
+
+.btn-agregar {
+    margin-top: 8rem;
+}
+
+.text-informativo {
+    font-size: 4rem;
+    margin-top: 1.5rem;
+}
+
+.seccion-utilidades {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Ajusta la altura deseada */
+}
+      
+.utilidades {
+    width: 50%;
+    height: 100%;
+    padding-top: 15rem;
+}
+

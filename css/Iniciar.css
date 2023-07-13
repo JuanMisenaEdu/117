@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lila: #b8a2be;
+    --Oscuro: #212121;
+    --Primario: #FFC107;
+    --Secundario: #0097A7;
+    --Gris: #757575;
+    --GrisClaro: #DFE9F3;
+    --fuente_principal:5.8rem;
+    
+    
+}
+html{
+    font-size: 25.5%;/*Reiniciamos toda la pagina a un tamaño estandar*/
+    box-sizing: border-box;/*Recalcula el ancho de una caja para que el width sea la estrictamente
+    la suma de border + padding + ancho o altura que sea necesario para que se cumpla*/
+
+}
+
+
+
+body{
+    font-size: 3rem;
+    font-family: 'krub', sans-serif;/*añadimos la fuente de google fonts para que se aplique
+    a toda la pagina html*/
+    
+    
+    /*DEGRADADO DE ABAJO HACIA ARRIBA*/
+}
+
+@media ( min-width:480px ) {
+    body{
+        background-color:blue;/*Llegado a los 480 px de tamaño de la pagina, esta se pone de color azul*/
+        font-size: 5rem;
+    }
+}
+@media ( min-width:768px ) {
+    body{
+        background-color:white;
+        
+    }
+}
+.titulo{
+    font-size: 16rem;
+    color: var(--Oscuro);
+    font-family: 'Allan', cursive;
+    padding-left: 11.2%;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 10%;
+    
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 5px;
+    border: solid 2px;
+    border-radius: 8px;
+   
+}
+nav ul li a:hover{
+    background-color: white;
+    border-radius: 15px;
+}
+.background{
+    background-color: var(--lila);
+    background-color: var(--GrisClaro);
+    
+}
+.grid{
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    text-align: center;
+}
+.c1{
+    background-color: var(--lila);
+}
+.c2{
+    padding: 40px;
+    justify-items: center;
+    background-color: var(--GrisClaro);
+    font-family: 'Allan', cursive;
+}
+.logo{
+    height: 350px;
+    width: 360px ;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+.Contenedor {
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 8px 30px rgb(0, 0, 0);
+    }
+    #Formulario {
+    padding: 30px 20px;
+    }
+    .Form-control {
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    
+    
+    }
+    .Form-control label {
+    margin-bottom: 7px;
+    font:weight 200px
+    }
+    .Form-control input {
+    border: none;
+    background-color: #f0f0f0;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    }
+    .Form-control, input:focus {
+    outline: none;
+    }
+    .Form-control.ok input {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+    }
+    .Form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+    }
+    #Formulario button {
+    background: #3dc7be;
+    border:1px solid #000000;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    }
+    .Form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+    }
+    .Form-control.falla p {
+    visibility: visible;
+    color:#e74c3c;
+    }
+    .centrar{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        min-height: 20vh; 
+    }
+    #Formulario a{
+        color: white;
+        text-decoration: none;
+        margin-top: 5cm;
+    }
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color:var(--lila)
+}
+    
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+        
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.box_footer .logo_footer img{
+    width: 160px;
+}
+.box_footer .termino{
+    max-width: 350px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box_footer h2{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.box_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.copyright{
+    max-width: 1250px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.copyright p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+hr{
+   margin-bottom: 2px;
+}
+.btn{
+    padding: 10px 15px;
+    width: 180px;
+    align-self: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}   

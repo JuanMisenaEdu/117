@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lila: #b58fc0;
+    --Oscuro: #212121;
+    --Primario: #FFC107;
+    --Secundario: #0097A7;
+    --Gris: #757575;
+    --GrisClaro: #DFE9F3;
+    --fuente_principal:5.8rem;
+    
+    
+}
+html{
+    font-size: 25.5%;/*Reiniciamos toda la pagina a un tamaño estandar*/
+    box-sizing: border-box;/*Recalcula el ancho de una caja para que el width sea la estrictamente
+    la suma de border + padding + ancho o altura que sea necesario para que se cumpla*/
+
+}
+
+
+
+body{
+    font-size: 3rem;
+    font-family: 'krub', sans-serif;/*añadimos la fuente de google fonts para que se aplique
+    a toda la pagina html*/
+    
+    /*DEGRADADO DE ABAJO HACIA ARRIBA*/
+}
+
+@media ( min-width:480px ) {
+    body{
+        /*Llegado a los 480 px de tamaño de la pagina, esta se pone de color azul*/
+        font-size: 5rem;
+    }
+}
+@media ( min-width:768px ) {
+    body{
+        background-color:white;
+        
+    }
+}
+.tituloo{
+    font-size: var(--fuente_principal);
+    color: var(--Oscuro);
+    font-family: 'Allan', cursive;
+    
+}
+.hero{
+  background-color: var(--lila);
+}
+nav{
+    display: flex;
+    
+    align-items: center;
+    height: 50px;
+    padding: 95px 2%;
+    
+}
+.logo_header{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    margin-top: 5px;
+    
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 100px;
+
+   
+}
+nav ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.logo_header img{
+    width: 160px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    
+}
+nav .centrar P{
+    margin-left: 165px;
+    font-family: 'Bacasime Antique', serif;
+    font-size: 50px;
+    margin-bottom: 5px;
+
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: var(--lila);
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.box_footer .logo_footer img{
+    width: 160px;
+    display: flex;
+}
+.box_footer .termino{
+    max-width: 350px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box_footer h2{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.box_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.copyright{
+    max-width: 1250px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.copyright p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+.nosotros{
+    height: 60vh;
+    width: 100%;
+    
+    
+}
+.textos{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    
+    
+}
+.color{
+    background-color: #d3cece;
+    border-radius: 50px;
+    padding: 2rem;
+}
